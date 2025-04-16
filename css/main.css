@@ -1,0 +1,6 @@
+.custom-arrow-list li::before {
+  content: "➤  "; /* Arrow symbol */
+  color: #0d6efd; /* Bootstrap primary color */
+
+
+}
