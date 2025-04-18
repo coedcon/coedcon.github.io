@@ -1,6 +1,21 @@
 .custom-arrow-list li::before {
   content: "➤  "; /* Arrow symbol */
   color: #0d6efd; /* Bootstrap primary color */
+}
+
+.sponsor-logo {
+  max-height: 40px; /* control the height */
+  max-width: 120px; /* control the width */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
 
 
+.sponsor-logo-belfort {
+  max-height: 110px; /* control the height */
+/*  max-width: 140px; /* control the width */
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
