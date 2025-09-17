@@ -1,15 +1,22 @@
-<style>
-  .hero-image-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 300px; /* Adjust this value to control how much is shown */
-  }
+/* headerpicture.css */
+.hero-image-container {
+  /* Tweak these two to taste */
+  --hero-height: 220px;   /* overall banner height */
+  --hero-y: 70%;           /* vertical focus: 0% = top, 10% shows a bit lower */
 
-  .hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center; /* Aligns the image to the top, crops only the bottom */
-  }
-</style>
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: var(--hero-height);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center var(--hero-y); /* keeps top in view by default */
+}
+
+/* Optional: responsive heights */
+@media (min-width: 768px) { .hero-image-container { --hero-height: 280px; } }
+@media (min-width: 1200px){ .hero-image-container { --hero-height: 340px; } }
